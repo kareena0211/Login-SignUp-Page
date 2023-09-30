@@ -1,0 +1,42 @@
+.form{
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1,.icon{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.password{
+    width: 90%;
+}
+
+
+.login{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.login:hover{
+    background-color: var(--secondary-color);
+}
+
+.inputContainer{
+    width: 80%;
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--grey-color);
+
+}
