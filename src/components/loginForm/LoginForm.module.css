@@ -1,41 +1,43 @@
-.form{
-    height: 20rem;
-    width: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
-    border-radius: 1rem;box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+.form {
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  border-radius: 1rem;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px,
+    rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
+    rgb(255, 85, 85) 0px 0px 0px 15px;
 }
 
-h1,.icon{
-    color: var(--primary-color);
-    cursor: pointer;
+h1,
+.icon {
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
-.password{
-    width: 90%;
+.password {
+  width: 90%;
 }
 
-
-.login{
-    color: var(--white-color);
-    background-color: var(--primary-color);
-    width: 90%;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
+.login {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
-.login:hover{
-    background-color: var(--secondary-color);
+.login:hover {
+  background-color: var(--secondary-color);
 }
 
-.inputContainer{
-    width: 80%;
-    display: flex;
-    gap: 0.5rem;
-    border-bottom: 2px solid var(--grey-color);
-
+.inputContainer {
+  width: 80%;
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--grey-color);
 }
