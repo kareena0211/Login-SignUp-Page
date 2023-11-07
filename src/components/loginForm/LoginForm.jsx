@@ -15,6 +15,7 @@ const LoginForm = () => {
         alert("Password Should contain Atleast 6 Character")
         return;
     }
+    alert("Your Data has been Submitted")
     console.log(email, password);
   };
   return (
