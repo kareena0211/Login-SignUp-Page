@@ -1,14 +1,11 @@
 // import React from 'react'
 import "./App.css";
-import LoginForm from './components/loginForm/LoginForm';
-import SignUp from "./components/signUpPage/SignUpPage";
-// import SignUpPage from "./components/signUpPage/SignUpPage";
+import LinkingFile from "./components/LinkingFile";
 
 function App(){
   return (
     <>
-      {/* <LoginForm/>  */}
-      <SignUp/>
+      <LinkingFile/>
     </>
   )
 }

@@ -4,11 +4,21 @@ import EmailIcon from "@mui/icons-material/Email";
 import LockIcon from "@mui/icons-material/Lock";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+
+  // ......................................................
+
+const navigate = useNavigate()
+const handleSubmitBtn = () =>{
+  navigate("/")
+}
+
+  // ............................................................
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password.length<6){
@@ -35,7 +45,7 @@ const LoginForm = () => {
         <div className={style.inputContainer}>
           <LockIcon className={style.icon} />
           <input
-            type={showPassword ? "password":"text"}
+            type={showPassword ? "password" : "text"}
             placeholder="Enter Password..."
             className={style.password}
             value={password}
@@ -57,6 +67,9 @@ const LoginForm = () => {
         </div>
         <button className={style.login} type="submit">
           Login
+        </button>
+        <button className={style.login} onClick={handleSubmitBtn} type="submit">
+          Are you SignUp
         </button>
       </form>
     </>

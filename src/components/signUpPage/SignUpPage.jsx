@@ -5,6 +5,7 @@ import LockIcon from "@mui/icons-material/Lock";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import PersonIcon from "@mui/icons-material/Person";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -12,6 +13,14 @@ const SignUp = () => {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+
+
+//   ......................................................
+
+const navigate = useNavigate()
+const handleButton = () =>{
+     navigate("/login")
+}
 
   // ........................................................................
 
@@ -94,6 +103,9 @@ const SignUp = () => {
         {/* ....................................................................... */}
         <button className={style.login} type="submit">
           SignUp
+        </button>
+        <button className={style.login} onClick={handleButton} type="submit">
+          Are you Login ?
         </button>
       </form>
     </>
