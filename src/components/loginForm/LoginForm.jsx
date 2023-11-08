@@ -42,6 +42,9 @@ const handleSubmitBtn = () =>{
             required
           />
         </div>
+
+        {/* ......................................................... */}
+        
         <div className={style.inputContainer}>
           <LockIcon className={style.icon} />
           <input
@@ -65,6 +68,8 @@ const handleSubmitBtn = () =>{
             />
           )}
         </div>
+{/* .............................................. */}
+
         <button className={style.login} type="submit">
           Login
         </button>
